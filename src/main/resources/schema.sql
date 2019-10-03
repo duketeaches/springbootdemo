@@ -1,6 +1,6 @@
-CREATE TABLE BOOK (
-    id   INTEGER      NOT NULL AUTO_INCREMENT,
-    title VARCHAR(128) NOT NULL,
-    author VARCHAR(128) NOT NULL,
-    PRIMARY KEY (id)
-);
+CREATE TABLE `books` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `title` varchar(500) DEFAULT NULL,
+  `author` varchar(500) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci
