@@ -20,6 +20,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     protected void configure(HttpSecurity http) throws Exception {
 	http.headers().frameOptions().disable();
 	http.authorizeRequests().anyRequest().permitAll().and().csrf().disable();
+	http.requiresChannel().anyRequest().requiresSecure();
     }
 
 }
